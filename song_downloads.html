@@ -1,0 +1,33 @@
+<script type="text/javascript" src='js/jq.min.js'></script>
+<script type="text/javascript" src='js/jszip/jszip.js'></script>
+<script type="text/javascript" src='js/tab_song_fetcher.js'></script>
+<script type="text/javascript" src='js/song_downloads_init.js'></script>
+
+<html>
+<head>
+<title>skttrbrain_song_downloads</title>
+</head>
+<body>
+
+  Welcome to the shitty download page!</br></br>
+  Songs on SB:</br>
+First:  <button onclick="query_sb_tab()">Grab your playlist.</button>
+  <table id=songs_selected>
+    
+  </table></br>
+Then:  <button id=download_button onclick="download_sb_songs()">And download that shit!</button>
+  <div id=under_download_button></div>
+
+  <div>your download link will be here when its done:
+  <div id=output></div>
+</br></br>
+</br></br>
+</br></br>
+
+
+<div> And look at all these goddamn errors:<br/><br/>
+  <div id=exec_info>general issues:<span id=info_problems style="color=orange;">no obvious problems</span></div>
+  <div id=fs_info>filesystem:nothing to report</div>
+</div>
+</body>
+</html>

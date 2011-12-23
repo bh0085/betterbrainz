@@ -1,0 +1,22 @@
+{
+  "name": "stealerbrainz",
+  "version": "1.0",
+  "description": "ben's crappy skttrbain extension.",
+  "background_page": "plugin.html",
+  "browser_action": {
+      "default_title": "stealerbrainz",        
+      "default_icon": "img/icon.png"
+      },
+  "content_scripts": [
+    {
+      "matches": ["https://skttrbrain.net/*"],
+      "js": ["server_js/jq.min.js", 
+      "server_js/song_name_cs.js",
+      "],
+      "css":["injected.css"]
+    }
+  ],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*","unlimitedStorage"
+  ]
+}
